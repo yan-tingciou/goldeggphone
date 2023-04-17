@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *:before,*:after{
+    box-sizing: border-box;
+}
+.clearFloat{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+.top{
+  background: #;
+  margin-top: 10px;
+  opacity: 80%;
+}
+.top ul{
+  float: right;
+}
+.top li{
+  display: inline-block;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+.gep-fb{
+  border-right: 2px solid	#FFA07A;
+  padding: 10px;
+}
+.gep-fb span{
+  padding-left: 3px;
+  color: #4460a0;
+  font-weight: bold;
+}
+.gep-line span{
+  padding-left: 3px;
+  color: #06c755;
+  font-weight: bold;
+}
+.header{
+  height: 600px;
+}
+.header h1 a{
+  border-radius: 50%;
+  background: #000;
+  background-image: url(https://github.com/yan-tingciou/goldeggphone/blob/main/3.png?raw=true);
+  width: 97px;
+  height: 100px;
+  display: inline-block;
+  text-indent: 105%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 10px;
+}
+.header h1 a:hover{
+  transition: all .8s;
+  border-radius: 0%;
+}
+.header h1{
+  float: left;
+}
+.menu{
+  float: right;
+  align-items: center;
+  margin-top: 20px;
+}
+.menu a{
+  color: #000;
+  display: block;
+  padding: 20px;
+}
+.menu > li{
+  float: left;
+}
+.menu a:hover, .item li:hover, .brand li:hover{
+  border-bottom: 3px #FFD1A4 solid;
+}
+.item, .brand{
+  display: none;
+}
+.item li, .brand li{
+  line-height: 2;
+  text-align: center;
+}
+.item.active, .brand.active{
+  display: block;
+}
+.bg{
+  background-image: url(https://images.unsplash.com/photo-1598965402089-897ce52e8355?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1336&q=80);
+  height: 70%;
+  opacity: 30%;
+}
+.contact{
+  margin-left: 20px;
+}
+.contact p{
+  line-height: 1.5;
+}
+.footer{
+  background: #DCDCDC;
+  height: 50px;
+}
+.footer h3{
+  text-align: center;
+  padding-top: 15px;
+}
+.home img{
+  opacity: 60%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+}
+.home img:hover{
+  opacity: 80%;
+}
