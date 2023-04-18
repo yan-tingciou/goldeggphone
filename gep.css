@@ -186,6 +186,7 @@ table th{
 table{
   margin-top: 8px;
   line-height: 1.5;
+  margin: 0 auto;
 }
 .about{
   height: 300px;
