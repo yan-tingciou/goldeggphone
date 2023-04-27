@@ -47,6 +47,10 @@ table {
 .clearFloat{
   clear: both;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
 a{
   text-decoration: none;
 }
@@ -54,7 +58,6 @@ a{
   min-height: 100%;
 }
 .top{
-  background: #;
   margin-top: 10px;
   opacity: 80%;
 }
@@ -67,7 +70,7 @@ a{
   padding-top: 10px;
 }
 .gep-fb{
-  border-right: 2px solid	#FFA07A;
+  border-right: 2px solid	#FFD1A4;
   padding: 10px;
 }
 .gep-fb span{
@@ -79,9 +82,6 @@ a{
   padding-left: 3px;
   color: #06c755;
   font-weight: bold;
-}
-.header{
-  height: 600px;
 }
 .header h1 a{
   border-radius: 50%;
@@ -107,8 +107,8 @@ a{
   float: right;
   text-align: center;
   margin-top: 20px;
-  position: relative;
   z-index: 2;
+  position: relative;
 }
 .menu > li > a{
   display: block;
@@ -119,32 +119,36 @@ a{
 }
 .menu > li{
   float: left;
+  width: 120px;
 }
 .menu > li > a:hover{
   border-bottom: 3px #FFD1A4 solid;
   color: #FFD1A4;
   cursor: pointer;
 }
-.brand a:hover, .item li:hover{
+
+.item a{
+  width: 120px;
+  display: block;  
+}
+.item a:hover{
   color: #FFD1A4;
   cursor: pointer;
+  background: #000;
 }
-.item, .brand{
-  display: none;
-}
-.item li, .brand li{
+.item li{
+  width: 120px;
   line-height: 2;
   text-align: center;
+  background: rgb(225, 225, 225, .5);
 }
-.item.active, .brand.active{
+.item{
+  display: none;
+  position: absolute;
+  z-index: 2;
+}
+.item.active{
   display: block;
-}
-.bg1{
-  top: 170px;
-  opacity: 30%;
-  height: 70%;
-  width: 100%;
-  position: absolute;  
 }
 .news{
   height: 400px;
@@ -155,7 +159,26 @@ a{
 .price{
   height: 800px;
 }
-.price h2{
+.swiper {
+  max-width: 1024px;
+  position: relative;
+}
+.swiper-wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.swiper-slide{
+  display: flex;
+}
+.swiper-slide img{
+  opacity: 40%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  aspect-ratio: 5/2;
+}
+#iphone{
   font-size: 28px;
   text-align: center;
   font-family: Microsoft JhengHei;
@@ -184,13 +207,13 @@ table th{
   padding: 10px 5px;
 }
 table{
+  margin: 0 auto;
   margin-top: 8px;
   line-height: 1.5;
-  margin: 0 auto;
 }
 .about{
   height: 300px;
-  margin-left: 20px;
+  margin: 600px 0px 0px 20px;
 }
 .about p{
   line-height: 1.5;
@@ -198,7 +221,8 @@ table{
 .footer{
   background: #DCDCDC;
   height: 50px;
-  margin-top: 990px; /*隨footer高度需做調整*/
+  /*margin-top: 990px; 隨footer高度需做調整*/
+  margin-top: -50px;
 }
 .footer h3{
   text-align: center;
@@ -214,5 +238,6 @@ table{
 .home img:hover{
   opacity: 80%;
 }
+
 
 

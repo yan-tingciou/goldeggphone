@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>金機誕-手機維修</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="gep.css">
-    <script src="jquery2.2.3.min.js"></script>
-    <script src="gep.js"></script>
     <meta name="google-site-verification" content="jdP5JnEZrm1oeoxL246p8yheoTmblOIAXqo8haEgxSw" />
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F8PX063401"></script>
@@ -34,16 +34,16 @@
         <li><a href="#">最新消息<br>News</a></li>
         <li><a href="#">服務項目<br>Service</a>
           <ul class="item">
-            <li>手機現場維修</li>
-            <li>手機配件</li>
-            <li>玻璃保護貼</li>
-            <li>二手機</li>
+            <li><a href="#">手機現場維修</a></li>
+            <li><a href="#">手機配件</a></li>
+            <li><a href="#">玻璃保護貼</a></li>
+            <li><a href="#">二手機</a></li>
             <li></li>
           </ul>
         </li>
         <li><a href="#">維修價目表<br>Price</a>
-          <ul class="brand">
-            <li><a href="#">蘋果 iPhone</a></li>
+          <ul class="item">
+            <li><a href="#iphone">蘋果 iPhone</a></li>
             <li><a href="#">三星 Samsung</a></li>
             <li><a href="#">OPPO</a></li>
             <li><a href="#">其他 Others</a></li>
@@ -52,13 +52,31 @@
         <li><a href="#">關於金機誕<br>About</a></li>
       </ul>
       <div class="clearFloat"></div>
-      <div class="bg">
-        <img src="https://images.unsplash.com/photo-1598965402089-897ce52e8355?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1336&q=80" class="bg1" alt="">
-      </div>
+      <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/repair-1.jpg?raw=true" alt=""></div>
+            <div class="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/broken-2.jpg?raw=true" alt=""></div>
+            <div class="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/broken-1.jpg?raw=true" alt=""></div>
+            <div class="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/repair-2.jpg?raw=true" alt=""></div>
+            <div class="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/iphone-1.jpg?raw=true" alt=""></div>
+            <div class="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/iphone-2.jpg?raw=true" alt=""></div>
+              
+            </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          
+          <!-- If we need navigation buttons -->
+  
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          
+        </div>
       <div class="news"></div>
       <div class="service"></div>
       <div class="price">
-        <h2><span>iPhone手機維修價格</span></h2>
+        <h2 id="iphone"><span>iPhone手機維修價格</span></h2>
         <table>
           <tr>
             <th>型號</th>
@@ -223,6 +241,7 @@
           <tr><td>iPhone 11 Pro</td><td>20400</td><td>11,190</td><td>10,000</td><td>4000</td><td>2,850</td><td>2650</td><td>1550</td><td>5400</td><td>3000</td><td>5000</td><td>7600</td></tr>
           <tr><td>iPhone 11</td><td>14500</td><td>7,900</td><td>7,700</td><td>3500</td><td>2,850</td><td>2650</td><td>1450</td><td>4200</td><td>2000</td><td>4000</td><td>7600</td></tr>
         </table>
+        <h2 id="samsung"><span>三星手機維修價格</span></h2>
       </div>
     </div>
     <div class="about">
@@ -230,7 +249,7 @@
     <p>
       金機誕
       <br>
-      電話 <a href="tel:+033197211">03-319 7211</a><br>
+      電話 <a href="tel:+88633197211">03-319 7211</a><br>
       電子信箱 <a href="mailto:goldeggphone@gmail.com">goldeggphone@gmail.com</a><br>
       營業時間 週一至週五 12:00–21:00<br>
       週六  12:00–18:00 週日固定公休<br>
@@ -244,7 +263,9 @@
       <a href="#"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/home.png?raw=true" alt=""></a>
     </div>
   </div>
-
-    <script src="https://kit.fontawesome.com/121eb476ab.js" crossorigin="anonymous"></script>
+    <script src="jquery2.2.3.min.js"></script>
+    <script src="https://kit.fontawesome.com/121eb476ab.js" crossorigin="anonymous"></script> <!-- 我個人申請的fontawesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js"></script>
+    <script src="gep.js"></script> <!-- 一定都是放最後 -->
 </body>
 </html>
