@@ -56,11 +56,11 @@ a{
   text-decoration: none;
 }
 .wrap{
-  max-width: 1000px;
   margin: 0 auto;
+  background: #eeeae7;
 }
 .top{
-  margin-top: 10px;
+  padding-top: 10px;
 }
 .top ul{
   float: right;
@@ -86,16 +86,14 @@ a{
 }
 .header h4 a{
   border-radius: 50%;
-  background: #000;
-  background-image: url(https://github.com/yan-tingciou/goldeggphone/blob/main/images/3.png?raw=true);
-  background-repeat: no-repeat;
+  background: url(https://github.com/yan-tingciou/goldeggphone/blob/main/images/3.png?raw=true) no-repeat #000;
   width: 97px;
   height: 100px;
   display: inline-block;
   text-indent: 105%;
   overflow: hidden;
   white-space: nowrap;
-  margin: 10px 15px;
+  margin: 10px 30px;
 }
 .header h4 a:hover{
   transition: all .8s;
@@ -120,7 +118,7 @@ a{
 }
 .menu > li{
   float: left;
-  width: 120px;
+  width: 130px;
 }
 .menu > li > a:hover{
   border-bottom: 3px #FFD1A4 solid;
@@ -128,7 +126,7 @@ a{
   cursor: pointer;
 }
 .item a{
-  width: 120px;
+  width: 130px;
   display: block;  
 }
 .item a:hover{
@@ -137,7 +135,7 @@ a{
   background: #000;
 }
 .item li{
-  width: 120px;
+  width: 130px;
   line-height: 2;
   text-align: center;
   background: rgb(225, 225, 225, .5);
@@ -150,17 +148,9 @@ a{
 .item.active{
   display: block;
 }
-.news{
-  height: 400px;
-}
-.service{
-  height: 300px;
-}
-.price{
-  height: 800px;
-}
+
 .swiper {
-  max-width: 1024px;
+  max-width: 1100px;
   position: relative;
 }
 .swiper-wrapper{
@@ -180,26 +170,33 @@ a{
 }
 .swiper h2{
   position: absolute;
-  top: 160px;
+  bottom: 100px;
   display: block;
   width: 100%;
   background: rgba(213, 158, 111, .5);
-  padding: 25px;
+  padding: 20px;
   z-index: 2;
-  font-size: 30px;
+  font-size: 36px;
+  line-height: 1.5;
 }
-#iphone{
+.price{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.price h2{
+  padding-top: 100px;
+  margin-top: 100px;
   font-size: 28px;
   text-align: center;
   font-family: Microsoft JhengHei;
-  border-bottom: 3px solid #f6a16a;
+  border-bottom: 4px solid #f6a16a;
   padding-bottom: 5px;
 }
 .price span{
   padding: 8px 8px 0px 8px;
-  border-top: 3px solid #f6a16a;
-  border-right: 3px solid #f6a16a;
-  border-left: 3px solid #f6a16a;
+  border-top: 4px solid #f6a16a;
+  border-right: 4px solid #f6a16a;
+  border-left: 4px solid #f6a16a;
 }
 table td{
   border: 1px solid grey;
@@ -209,6 +206,7 @@ table td{
   color: #000;
 }
 table th{
+  width: 110px;
   border: 1px solid;
   background: #e79e6f;
   color: #fff;
@@ -217,20 +215,58 @@ table th{
   padding: 10px 5px;
 }
 table{
+  max-width: 1200px;
   margin: 0 auto;
   margin-top: 8px;
   line-height: 1.5;
   font-family: sans-serif;
 }
+.title-bigger{
+  width: 130px;
+}
+@media(max-width:569px){
+  .price{
+    overflow-x: auto;
+  }
+  .iphone{
+    width: 768px;
+  }
+}
 .about{
-  margin: 600px 0px 20px 25px;
+  margin: 50px auto 0px;
+  max-width: 1000px;
 }
 .about > ul{
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media(max-width: 768px){
+  .about > ul {
+    display: block;
+    margin: 0 auto;
+  }
 }
 .about > ul > li{
   width: 47%;
+  padding: 2%;
   line-height: 1.7;
+}
+@media(max-width: 768px){
+  .about > ul > li{
+    width: 95%;
+    line-height: 1.7;
+    margin: 3%;
+  }
+}
+.contact{
+  border-right: 2px solid #FFD1A4;
+}
+@media(max-width: 768px){
+  .contact{
+    border-right: none;
+    border-bottom: 2px solid #FFD1A4;
+  }
 }
 .contact h3{
   font-size: 28px;
@@ -246,6 +282,7 @@ table{
 }
 .footer h3{
   text-align: center;
+  font-family: Microsoft JhengHei;
 }
 .home img{
   display: none;
